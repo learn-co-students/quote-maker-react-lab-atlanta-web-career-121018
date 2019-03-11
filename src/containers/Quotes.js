@@ -40,3 +40,20 @@ const mapStatetoProps = state => {
 }
 
 export default connect(mapStatetoProps, { removeQuote, upvoteQuote, downvoteQuote })(Quotes);
+
+// ALTERNATIVELY
+// const mapDispatchtoProps = dispatch => {
+//   return {
+//     removeQuote: () => {
+//       dispatch(removeQuote())
+//     },
+//     upvoteQuote: () => {
+//       dispatch(upvoteQuote())
+//     },
+//     downvoteQuote: () => {
+//       dispatch(downvoteQuote())
+//     }
+//   }
+// }
+
+// export default connect(mapStatetoProps, mapDispatchtoProps)(Quotes);
